@@ -4,4 +4,10 @@
     <string name="enter_name">Enter your name</string>
     <string name="submit">Submit</string>
     <string name="title_activity_fragment">FragmentActivity</string>
+    <string name="hint.name">Name</string>
+    <string name="hint.email">Email</string>
+    <string name="hint.password">Password</string>
+    <string name="hint.confirm_password">Confirm Password</string>
+    <string name="hint.address">Address</string>
+    <string name="hint.phone">Phone</string>
 </resources>
