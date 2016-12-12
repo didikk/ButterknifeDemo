@@ -9,10 +9,10 @@ import android.widget.Toast;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import butterknife.Unbinder;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String TAG = MainActivity.class.getName();
+
+    private static final String TAG = MainActivity.class.getName();
 
     @BindView(R.id.et_name) EditText etName;
     @BindView(R.id.et_email) EditText etEmail;
@@ -21,19 +21,11 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.et_address) EditText etAddress;
     @BindView(R.id.et_phone) EditText etPhone;
 
-    private Unbinder unbinder;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        unbinder = ButterKnife.bind(this);
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        unbinder.unbind();
+        ButterKnife.bind(this);
     }
 
     @OnClick(R.id.btn_submit)
